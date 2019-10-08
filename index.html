@@ -1,0 +1,85 @@
+<html><head><title>Step 1</title>
+    <script src="ajaxHandle.js" type="text/javascript"></script>
+
+</head>
+<body>
+<h1>
+    Welcome to the CLUE online game!
+
+</h1>
+
+<p id = "topText">
+
+</p>
+
+
+<SPAN id = userNameReplace>
+    <FORM id = "userName">
+        Please enter your name to start.
+        </br></br>
+        Name:
+        <input id = "startGame" type="text" autofocus="true" />
+        <input type="button" value="Enter" onclick='sendRequestSetGameUp()'/>
+    </FORM>
+</SPAN>
+
+
+
+</p><p>
+
+<select id = "roomChoice">
+    <option value="Rooms">ROOMS</option>
+</select>
+    <br><br>
+<select id = "suspectChoice">
+    <option value="Suspects">SUSPECTS</option>
+</select>
+    <br><br>
+<select id = "weaponChoice">
+    <option value="Weapons">WEAPONS</option>
+</select>
+    <br><br>
+<button id = "guessBTN"  disabled="true" onclick="sendRequestGuess()">Guess</button>
+    <br><br>
+</p>
+
+<br>
+<p id = "notSucssful">
+    This is the start of my debug:
+</p>
+
+
+   <h3>Press to show/hide history of card reveals for this game. </h3>
+
+<br>
+    <button id = "history"  onclick="showHistory()">Show History</button>
+<p id = "textHistory">
+
+</p>
+
+<br>
+</p>
+
+
+<h3>Press to show/hide record of card reveals for this game. </h3>
+
+<br>
+<button id = "record"  onclick="showRecord()">Show Record</button>
+<p id = "textRecord">
+
+</p>
+
+<br><br>
+
+
+
+<p id = "debug2">
+</p>
+
+
+
+
+</body></html>
+
+
+
